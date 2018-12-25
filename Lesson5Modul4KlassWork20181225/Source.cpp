@@ -135,7 +135,34 @@ void Task5()
 	printf("\n--------------------------------------------------------------------------\n\nTask5\n\n");
 	SetConsoleTextAttribute(hConsole, 7);
 
-	
+	int g, p , sg, sumsg, sump, field, district, sumdistrict=0;
+
+
+	for (district = 1; district <= 5; district++)
+	{
+		
+		sg = 0;
+		sumsg = 0;
+				
+		printf("\n Район № %d \n", district);
+		
+		for (field = 1; field <= 4; field++)
+		{
+			g = 100 + rand() % 10;
+			p = 14 + rand() % 10;
+			sg = g * p;
+			sumsg = sg + sumsg;
+			
+			printf("c %d поля собрано пшеницы : %d \n", field, sg);
+		}
+		
+		printf("\n Собрано пшеницы в районе : %d \n", sumsg);
+		
+		sumdistrict = sumdistrict + sumsg;
+			
+	}
+
+	printf("\n В области собрано пшеницы %d, средняя урожайность в области %d \n\n", sumdistrict, sumdistrict / district);
 }
 
 
