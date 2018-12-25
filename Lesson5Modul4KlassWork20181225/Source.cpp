@@ -183,23 +183,6 @@ void Task7()
 }
 
 
-void Task8()
-{
-	SetConsoleTextAttribute(hConsole, 10);
-	printf("\n--------------------------------------------------------------------------\n\nTask8\n\n");
-	printf("\nÂ ðàçðàáîòêå.... \n\n");
-	SetConsoleTextAttribute(hConsole, 7);
-}
-
-
-void Task9()
-{
-	SetConsoleTextAttribute(hConsole, 10);
-	printf("\n--------------------------------------------------------------------------\n\nTask9\n\n");
-	printf("\nÂ ðàçðàáîòêå.... \n\n");
-	SetConsoleTextAttribute(hConsole, 7);
-}
-
 
 int main()
 {
@@ -224,8 +207,7 @@ int main()
 		case 5: {Task5(); } break;
 		case 6: {Task6(); } break;
 		case 7: {Task7(); } break;
-		case 8: {Task8(); } break;
-		case 9: {Task9(); } break;
+
 
 		default: printf("\nEntered number of Task does not exist...\n\n");
 
